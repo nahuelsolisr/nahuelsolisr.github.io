@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a target="_blank" href="https://www.linkedin.com/in/rodrigo-nahuel-solis-142815257/"><i class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/nahuelsolisr/"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenido</p>
+                <h2>Soy <span>Rodrigo Solis</span></h2>
+                <p class="descripcion">Developer Trainee .NET C# / SQL / HTML / CSS </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Rodrigo</span> </h2>
+            <h3>Desarrollador</h3>
+            <p>Tengo 22 años, vivo en Buenos Aires, actualmente me encuentro en 3er año de la carrera analisis, desarrollo y programación de aplicaciones.</p>
+            <p>tengo varios pasatiempos como tocar instrumentos, cocinar y realizar cursos  </p>
+            <p>tengo muy buena experiencia en relaciones de grupos de trabajo y tambien en solitario</p>
+            <p>Me gusta aprender nuevas tecnologias y actualmente me encuentro aprendiendo JAVASCRIPT y PYTHON</p>
+            <a  download="Curriculum" href="img/Curriculum.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-laptop-code"></i></span>
+                <h4>Programación .NET</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>POO</li>
+                   
+                    
+                </ul>
+                <p>Desarrollo y programación de aplicaciones para escritorio utilizando C#</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Paginas Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Estructura</li>
+                    <li>Diseño</li> 
+                </ul>
+                <p>Creación de paginas web utilizando HTML / CSS / JAVASCRIPT</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file"></i></span>
+                <h4>Base de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>SQL Server</li>
+                    
+                </ul>
+                <p>Creación de base de datos, realizar consultas, insertar, eliminar y modificar. </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>C#</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="C#"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Base de datos</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>HTML</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>CSS</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="css"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.gif" alt="">
+                <div class="info">
+                    <h4>Juego "La Generala"</h4>
+                    <p>Programación .NET</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.gif" alt="">
+                <div class="info">
+                    <h4>Software de gestión</h4>
+                    <p>Programación .NET</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.gif" alt="">
+                <div class="info">
+                    <h4>Algoritmos Rafagas CPU</h4>
+                    <p>Programación .NET</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Landing Page</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Base de datos utilizada en el software de gestión</h4>
+                    <p>SQL y ACCES</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+       
+        <div class="correo">
+            <span class="icono"><i class="fa-solid fa-envelope"></i>solisrodrigo619@gmail.com</span>
+            <p></p>
+            <span class="icono"><i class="fa fa-phone" aria-hidden="true"></i>2223501900</span>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2022</p>
+       
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
