@@ -152,12 +152,13 @@
             max-width: 400px;
             margin-right: 80px;
         }
-        
+       
         #sobremi .contenedor-foto img {
             padding: 20px;
             width: 100%;
             border-radius: 20px;
             background-color: #f3f3f3;
+           
         }
         
         #sobremi .sobremi {
