@@ -155,7 +155,7 @@
        
         #sobremi .contenedor-foto img {
             padding: 20px;
-            width: 100%;
+            width: 100% !important;
             border-radius: 20px;
             background-color: #f3f3f3;
            
@@ -437,7 +437,9 @@
         #portfolio .fila .proyecto:hover img {
             filter: grayscale(0);
         }
-        
+        #portfolio .fila .proyecto .info a{
+            color: #ff5080;
+        }
         #portfolio .fila .proyecto .info {
             position: absolute;
             left: 0px;
