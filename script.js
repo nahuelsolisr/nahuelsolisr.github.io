@@ -1,3 +1,18 @@
+document.getElementById("toggleButton").addEventListener("click", function() {
+    var toggleText = document.getElementById("toggleText");
+    var buttonText = document.getElementById("toggleButton");
+    
+    if (toggleText.classList.contains("hidden-text")) {
+        toggleText.classList.remove("hidden-text");
+        buttonText.textContent = "Mostrar menos";
+    } else {
+        toggleText.classList.add("hidden-text");
+        buttonText.textContent = "Mostrar más";
+    }
+});
+
+
+
 let menuVisible = false;
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
@@ -30,7 +45,6 @@ function efectoHabilidades(){
         habilidades[6].classList.add("trabajo");
         habilidades[7].classList.add("dedicacion");
         habilidades[8].classList.add("Disciplina");
- 
     }
 }
 

@@ -720,3 +720,11 @@ ul.skills-list li img {
     color: var(--color-text);
 }
 
+ button a {
+        text-decoration: none;
+       
+    }
+
+    .hidden-text {
+        display: none;
+    }

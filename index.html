@@ -49,11 +49,10 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p>Soy de <span>Buenos Aires, Domselaar</span>. A los 20 años decidí inscribirme en la carrera de análisis, desarrollo y programación de aplicaciones en el <span> Instituto Superior de Formación Docente y Técnica Nº 93 </span> en San Vicente. En poco tiempo aprendí el lenguaje <span> C# </span> y creé varias aplicaciones para escritorio junto con el lenguaje de base de datos <span>SQL Server</span>. En segundo año <span>participé de un proyecto</span> para una institución, desarrollando un sistema para su gestión. Esta experiencia fue muy valiosa para mí, ya que me permitió adquirir habilidades prácticas como el uso de <span>metodologías ágiles y participar en un proyecto real en equipo.</span>
-            Además, tengo experiencia en el uso de <span>GitHub</span>. También he adquirido conocimientos en <span>UX y UI</span>, lo que me ha permitido <span>aplicar un enfoque centrado en el usuario</span>. He tenido la oportunidad de aprender <span>Java y Python </span>a través de la plataforma en línea OpenBootCamp, lo que me ha dado una pequeña base en ambos lenguajes de programación. Además, tengo una sólida base en tecnologías web, como <span>HTML 5, CSS, JavaScript, TypeScript</span>, que he adquirido a través de FreeCodeCamp y otras plataformas de aprendizaje en línea.
-            No todo es tecnología en mi vida, ya que también tengo una gran pasión por la <span>cocina</span>, la <span>música</span> y el <span>canto</span>. Actualmente tengo 23 años, <span>me encuentro en 3er año de la carrera</span> y <span>estoy buscando mi primera oportunidad laboral</span> en el campo de la tecnología de la información con el <span>objetivo de crecer profesionalmente y aprender de un equipo de trabajo experimentado.</span></p>
-            <div class="fila">
+                <h2>Sobre Mí</h2>
+                <p>Soy de Buenos Aires, Domselaar. A los 20 años decidí inscribirme en la carrera de análisis, desarrollo y programación de aplicaciones en el Instituto Superior de Formación Docente y Técnica Nº 93  en San Vicente.</p>En poco tiempo...<p id="toggleText" class="hidden-text">Aprendí el lenguaje C# y creé varias aplicaciones para escritorio junto con el lenguaje de base de datos SQL Server. En segundo año participé de un proyecto para una institución, desarrollando un sistema para su gestión. Esta experiencia fue muy valiosa para mí, ya que me permitió adquirir habilidades prácticas como el uso de metodologías ágiles y participar en un proyecto real en equipo. Además, tengo experiencia en el uso de GitHub. También he adquirido conocimientos en UX y UI, lo que me ha permitido aplicar un enfoque centrado en el usuario. He tenido la oportunidad de aprender Java y Python a través de la plataforma en línea OpenBootCamp, lo que me ha dado una pequeña base en ambos lenguajes de programación. Además, tengo una sólida base en tecnologías web, como HTML 5, CSS, JavaScript, TypeScript, que he adquirido a través de FreeCodeCamp y otras plataformas de aprendizaje en línea. No todo es tecnología en mi vida, ya que también tengo una gran pasión por la cocina, la música y el canto. Actualmente tengo 23 años, me encuentro en 3er año de la carrera y estoy buscando mi primera oportunidad laboral en el campo de la tecnología de la información con el objetivo de crecer profesionalmente y aprender de un equipo de trabajo experimentado.</p>
+                <button id="toggleButton">Mostrar más</button>
+                <div class="fila">        
                 <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
@@ -286,8 +285,7 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">        
-                    <button id="whatsapp-button">
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <button><a href="https://api.whatsapp.com/send?phone=2223501900" target="_blank">Enviar Mensaje<i class="fa-solid fa-paper-plane"></i></a>
                         <span class="overlay"></span>
                     </button>
                 </div>
