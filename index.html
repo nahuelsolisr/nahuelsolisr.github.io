@@ -1,246 +1,309 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="img/fondo-inicio.jpg">
-    <title>Portafolio</title>
 </head>
-
 <body>
-    <!-- SECCION I N I C I O -->
-    <section id="inicio">
-        <div class="contenido">
-            <header>
-                <div class="contenido-header">
-                    <h1></h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-
-                    <!-- Icono del menu responsive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-
-
-                    <div class="redes">
-                        <a target="_blank" href="https://www.linkedin.com/in/rodrigo-solis-142815257/"><i class="fab fa-linkedin-in"></i></a>    
-                        <a target="_blank" href="https://github.com/nahuelsolisr"><i class="fab fa-github"></i></a>                                         
-                    </div>
-                </div>
-            </header>
-            <div class="presentacion">
-                <p class="bienvenida">Bienvenido</p>
-                <h2>Soy <span>Rodrigo Solis</span></h2>
-                <p class="descripcion">Developer .NET C# | Windows Forms | SQL Server |HTML5 - CSS- JS</p>
-                <a href="#portfolio">Ir a Portafolio</a>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"></a>
             </div>
-        </div>
-    </section>
-
-    <!-- SECCION S O B R E M I -->
-    <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="img/foto.jpg" alt="">
-        </div>
-        <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
-            <h2>Hola, mi nombre es <span>Rodrigo</span> </h2>
-         
-            <p> Soy de Buenos Aires, Domselaar. A los 20 años decidí inscribirme en la carrera de análisis, desarrollo y programación de aplicaciones en el Instituto Superior de Formación Docente y Técnica Nº 93 en San Vicente. En poco tiempo aprendí el lenguaje C# y creé varias aplicaciones para escritorio junto con el lenguaje de base de datos SQL Server. En segundo año participé de un proyecto para una institución, desarrollando un sistema para su gestión. Esta experiencia fue muy valiosa para mí, ya que me permitió adquirir habilidades prácticas como el uso de metodologías ágiles y participar en un proyecto real en equipo.</p>
-            <p>Además,tengo experiencia en el uso de GitHub. También he adquirido conocimientos en UX y UI, lo que me ha permitido aplicar un enfoque centrado en el usuario. He tenido la oportunidad de aprender Java y Python a través de la plataforma en línea OpenBootCamp, lo que me ha dado una pequeña base en ambos lenguajes de programación. Además, tengo una sólida base en tecnologías web, como HTML 5, CSS y JavaScript, que he adquirido a través de FreeCodeCamp y otras plataformas de aprendizaje en línea.</p>
-            <p>En la primera mitad de este año, estoy colaborando con un compañero en el desarrollo de un sistema de gestión de inventario para la materia Economía Empresarial .</p>
-           <p>No todo es tecnología en mi vida, ya que también tengo una gran pasión por la cocina, la música y el canto. Actualmente tengo 23 años, me encuentro en 3er año de la carrera y estoy buscando mi primera oportunidad laboral en el campo de la tecnología de la información con el objetivo de crecer profesionalmente y aprender de un equipo de trabajo experimentado.</p>
-           
-        
-        </div>
-    </section>
-
-    <!-- SECCION S E R V I C I O S -->
-    <section id="servicios">
-        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono"> <i class="fa-solid fa-laptop-code"></i></span>
-                <h4>Programación .NET</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>POO</li>
-                   
-                    
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
-                <p>Desarrollo y programación de aplicaciones personalizadas en C#</p>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Paginas Web</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Estructura</li>
-                    <li>Diseño</li> 
-                </ul>
-                <p>Creación de paginas web utilizando HTML 5/ CSS / JAVASCRIPT</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file"></i></span>
-                <h4>Base de datos</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>SQL Server</li>
-                    
-                </ul>
-                <p>Creación de base de datos, realizar consultas, insertar, eliminar, modificar - Funciones, Triggers, Procedimientos almacenados. </p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-pen-to-square"></i></span>
-                <h4>Diseño grafico</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Photoshop</li>
-                    
-                </ul>
-                <p>Creacion de logos, Banners, Tarjetas, Folletos, Collages, edición de videos, etc.</p>
-            </div>
-        </div>
-        
-    </section>
-
-    <!-- SECCION H A B I L I D A D E S -->
-    <div class="contenedor-skills" id="skills">
-        <h3>HABILIDADES </h3>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>C#</p>
-                <span class="porcentaje">90%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="C#"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Base de datos</p>
-                <span class="porcentaje">80%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="bd"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"></span>Diseño Grafico</p>
-                <span class="porcentaje">80%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="html"></div>
-            </div>
-        </div>
-        <div class="skill">
-            <div class="info">
-                <p> <span class="lista"> </span>Html5 / Css / Js</p>
-                <span class="porcentaje">75%</span>
-            </div>
-
-            <div class="barra">
-                <div class="" id="css"></div>
-            </div>
-        </div>
+        </header>
     </div>
 
-    <!-- SECCION PORTAFOLIO -->
-    <section id="portfolio">
-        <h3 class="titulo-seccion">Mis Proyectos</h3>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>      
-                <img src="img/proyecto1.gif" alt="">
-                <div class="info">
-                    <h4>Juego "La Generala"</h4>
-                    <p>Programación .NET</p>
-                    <p><a href="https://github.com/nahuelsolisr/Yahtzee" target="_blank">Ver repositorio</a></p>
-                </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto2.gif" alt="">
-                <div class="info">
-                    <h4>Software de gestión</h4>
-                    <p>Programación .NET</p>
-                    <p><a href="https://github.com/nahuelsolisr/Proyecto-501" target="_blank">Ver repositorio</a></p>
-                </div>
+            <h1>Rodrigo Solis</h1>
+            <h2>Desarrollador de software</h2>
+            <div class="redes">
+                <a target="_blank" href="https://github.com/nahuelsolisr"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/rodrigo-solis-142815257/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto3.gif" alt="">
-                <div class="info">
-                    <h4>Algoritmos Rafagas CPU</h4>
-                    <p>Programación .NET</p>
-                    <p><a href="https://github.com/nahuelsolisr/Rafagas-CPU" target="_blank">Ver repositorio</a></p>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>Soy de <span>Buenos Aires, Domselaar</span>. A los 20 años decidí inscribirme en la carrera de análisis, desarrollo y programación de aplicaciones en el <span> Instituto Superior de Formación Docente y Técnica Nº 93 </span> en San Vicente. En poco tiempo aprendí el lenguaje <span> C# </span> y creé varias aplicaciones para escritorio junto con el lenguaje de base de datos <span>SQL Server</span>. En segundo año <span>participé de un proyecto</span> para una institución, desarrollando un sistema para su gestión. Esta experiencia fue muy valiosa para mí, ya que me permitió adquirir habilidades prácticas como el uso de <span>metodologías ágiles y participar en un proyecto real en equipo.</span>
+            Además, tengo experiencia en el uso de <span>GitHub</span>. También he adquirido conocimientos en <span>UX y UI</span>, lo que me ha permitido <span>aplicar un enfoque centrado en el usuario</span>. He tenido la oportunidad de aprender <span>Java y Python </span>a través de la plataforma en línea OpenBootCamp, lo que me ha dado una pequeña base en ambos lenguajes de programación. Además, tengo una sólida base en tecnologías web, como <span>HTML 5, CSS, JavaScript, TypeScript</span>, que he adquirido a través de FreeCodeCamp y otras plataformas de aprendizaje en línea.
+            No todo es tecnología en mi vida, ya que también tengo una gran pasión por la <span>cocina</span>, la <span>música</span> y el <span>canto</span>. Actualmente tengo 23 años, <span>me encuentro en 3er año de la carrera</span> y <span>estoy buscando mi primera oportunidad laboral</span> en el campo de la tecnología de la información con el <span>objetivo de crecer profesionalmente y aprender de un equipo de trabajo experimentado.</span></p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            12-07-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            2223501900
+                        </li>
+                        <li>
+                            <strong>Mail</strong>
+                            solisrodrigo619@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            375 Domselaar, Buenos Aires
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-fire-burner"></i>
+                            <span>COCINAR</span>
+                        </div> 
+                        <div class="interes">
+                            <i class="fa-solid fa-microphone"></i>
+                            <span>CANTAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto4.jpg" alt="">
-                <div class="info">
-                    <h4>Landing Page</h4>
-                    <p>Photoshop</p>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila" >
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Técnicas </h3>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>83%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>UI/UX Design</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Database </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS & JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bootstrap </span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Profesionales</h3>
+                    <div class="skill">
+                        <span>Aprendizaje Continuo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>91%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Disciplina</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto5.jpg" alt="">
-                <div class="info">
-                    <h4>Base de datos utilizada en el software de gestión</h4>
-                    <p>SQL y ACCES</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto6.gif" alt="">
-                <div class="info">
-                    <h4>Gestión de inventario</h4>
-                    <p>Programación .NET + SQL Server</p>
-                    <p><a href="https://github.com/nahuelsolisr/Economia-Empresarial" target="_blank">Ver repositorio</a></p>
-                </div>
-            </div>
-            
         </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Análisis, desarrollo y programación de aplicaciones</h4>
+                        <span class="casa">Instituto Superior de Formación Docente y Técnica Nº 93</span>
+                        <span class="fecha">2020 - actualidad</span>
+                        <p>Comencé mis estudios en este instituto, adentrándome así en el nuevo mundo de las tecnologías de la información. Aquí tuve la oportunidad de familiarizarme con mi primer lenguaje de programación, C#, y el primer lenguaje de base de datos, SQL Server.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnologías web & otros</h4>
+                        <span class="casa">Plataformas digitales de aprendizaje</span>
+                        <span class="fecha">2020 - actualidad</span>
+                        <p>Además de mi carrera principal, he estado complementando mis conocimientos con el aprendizaje de otras tecnologías, tales como HTML, CSS, JavaScript, TypeScript y Java.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programacion de aplicaciones movil</h4>
+                        <span class="casa">CFL 401</span>
+                        <span class="fecha">2023-actualidad</span>
+                        <p>Este año, tomé la decisión de incursionar en el mundo de la programación móvil. Me inscribí en un curso presencial que se dicta cerca de donde recido, donde la idea es a incorporar Ionic a mis futuros proyectos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>I'm coming</h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.gif" alt="">
+                    <div class="overlay">
+                        <h3>CRUD C# SQL Server</h3>
+                        <p>Material Skin<br>
+                            <a href="https://github.com/nahuelsolisr/Economia-Empresarial" target="_blank" rel="noopener noreferrer">Ir al repositorio</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.gif" alt="">
+                    <div class="overlay">
+                        <h3>CRUD ASP.NET SQL SERVER</h3>
+                        <p>Angular Bootstrap<br>
+                            <a href="https://github.com/nahuelsolisr/website-credit-card" target="_blank" rel="noopener noreferrer">Ir al repositorio</a></p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>¿Cual será el siguiente?</h3>
+                        <p>para ver mis proyectos antiguos<br>
+                            <a href="https://github.com/nahuelsolisr?tab=repositories" target="_blank" rel="noopener noreferrer">Mis repositorios</a></p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">        
+                    <button id="whatsapp-button">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
         
-    </section>
-
-    <!-- SECCTION C O N T A C T O -->
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contactame ahora</h3> 
-        <div class="correo">
-            <span class="icono"><i class="fa-solid fa-envelope"></i> solisrodrigo619@gmail.com</span>
-            <p></p>
-            <span class="icono"><i class="fa fa-phone" aria-hidden="true"></i>   2223501900</span>
-        </div>
-    </section>
-
-    <!-- SECCION FOOTER -->
-    <footer> 
-        <p>Última actualización: 27 de julio de 2023</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
